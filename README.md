@@ -9,7 +9,7 @@ Notes from redux tutorial. [Docs - Redux-Toolkit](https://redux-toolkit.js.org/i
 - Or for TS
 - `npx create-react-app my-app --template redux-typescript`
 - Or to add to existing
-- `npm install @reduxjs/toolkit`
+- `npm install @reduxjs/toolkit react-redux`
 
 ### Initialize Redux Store
 #### index.js
