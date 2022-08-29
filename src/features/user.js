@@ -9,10 +9,11 @@ export const userSlice = createSlice({
   initialState: { value: initialStateValue },
   reducers: {
     //state - holds the current value of the state ~could be initial if we haven't logged in
-    //action -
+    //action - is like setState
     login: (state, action) => {
       state.value = action.payload;
     },
+    //doesn't need action payload because we are reseting back
     logout: (state) => {
       state.value = initialStateValue;
     },
