@@ -29,7 +29,7 @@ Notes from redux tutorial. [Docs - Redux-Toolkit](https://redux-toolkit.js.org/i
 - Import into index and add to store ~details in index.js
 
 #### Apply The Reducer Values
-- import `{useSelector}` to component
+- import `{useSelector}` to component ~this allows us to grab state for use
 - Declare variable to useSelector
   - eg. const user = useSelector((state) => state.user.value)
 - Treat like a prop
@@ -37,7 +37,7 @@ Notes from redux tutorial. [Docs - Redux-Toolkit](https://redux-toolkit.js.org/i
 #### Apply The Reducer Actions
 - export a variable with the action
   - eg. export const {login} = userSlice.actions
-- import `{useDispatch} from "react-redux"` and `{login}`
+- import `{useDispatch} from "react-redux"` and `{login}`  ~this allows us to setState
 - Add useDispatch() to a variable and then attach it to a event handler (onClick.. ect)
 - within brackets of useDispatch we want to set our state
   - eg. `onClick={() => {dispatch(login({name: "Jeff", age: 36, email: 'Jbridges1119@gmail.com'}))}}`
